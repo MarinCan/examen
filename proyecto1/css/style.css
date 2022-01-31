@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: dodgerblue;
+    background: rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.561);
 }
 .mainNav{
     height: 12vh;
