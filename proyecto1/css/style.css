@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: dodgerblue;
+    background: rgba(0, 0, 0, 0.459),rgba(0, 0, 0, 0.561);
 }
 .mainNav{
     height: 12vh;
@@ -25,6 +25,10 @@ body{
 .mainNav li a{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
+}
+.mainNav li a:hover{
+    margin: 0 15px;
 }
 .mainNav img{
     width: 250px;
