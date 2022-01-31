@@ -25,6 +25,10 @@ body{
 .mainNav li a{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
+}
+.mainNav li a:hover{
+    margin: 0 15px;
 }
 .mainNav img{
     width: 250px;
