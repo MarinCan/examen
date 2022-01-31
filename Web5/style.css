@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.portada{
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./img/background1.jpg);
+    background-position: center;
+    background-size:cover;
+    position:relative;
+}
+.navbar{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.icon{
+    width: 200px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 70%;
+    flex-direction: column;
+    text-align: center;
+}
+.main h1,p,button{
+    color: white;
+}
+.main h1{
+    font-size: 60px;
+
+}
+.main p{
+    padding: 30px 200px;
+}
+.main button{
+    background: none;
+    border: 1px white solid;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer; 
+    position: relative;
+    transition: 0.6s;
+   
+}
+.main button:hover{
+    border: 1px solid rgb(238, 31, 31);
+    background: rgb(238, 31, 31);
+    animation-name: button;
+    transform: translateY(15px);
+}
+/* Portada */
+.campus-sect h3{
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    transition: 0.5s;
+    position: relative;
+}
+.campus-sect:hover h3{
+    bottom: 50%;
+}
+.cursos{
+    width: 100%;
+}
+#cursos-titulo p{
+    color: black;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+#cursos-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px ;
+}
+#seccion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.secciones{
+    width: 350px;
+    background-color: #f8e8e8;
+    margin: 10px 25px 60px 25px;
+    text-align: center;
+    padding: 15px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.secciones p{
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 15px;
+}
+.secciones h3{
+    font-weight: 500;
+}
+.secciones:hover{
+    box-shadow: 0 0 20px 0 rgba(253, 0, 0, 0.5);
+}
+/* Que ofrecemos */
+.campus{
+    width: 100%;
+}
+.nuestros-campus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nuestros-campus p{
+    color: black;
+    padding: 15px 0 50px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+#seccion-ciudad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.campus-sect{
+    border-radius: 10px;
+    margin: 10px 10px 60px 10px;
+    height: 500px;
+    width: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.cam1{
+    background-image: url(./img/edificio3.png);
+    background-position: center;
+    background-size: cover;
+}
+.cam2{
+    background-image: url(./img/campus2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cam3{
+    background-image: url(./img/edificio1.png);
+    background-position: center;
+    background-size: cover;
+}
+.campus-sect h3{
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+}
+.campus-sect:hover h3{
+    transform: translateY(-50%);
+    opacity: 1;
+}
+/* Nuestro Campus */
+.opiniones{
+    width: 100%;
+}
+.main-opinion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.opinion{
+    background-color: #f3f3d9;
+    width: 550px;
+    height: 200px;
+    margin: 5px 25px 60px 25px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.opinion img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 15px 20px 0 15px;
+}
+.seccion p{
+    color: black;
+}
+.seccion i{
+    color: orange;
+}
+.seccion p,h3{
+    margin: 15px 0;
+}
+.opinion:hover{
+    box-shadow: 0 0 20px 0 rgba(253, 0, 0, 0.5);
+    transform: translateY(-15px);
+}
+/* Estudiantes */
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(./img/reunion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10vh 40vh;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.banner h1,button{
+    color: white;
+}
+.banner button{
+    background: none;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px white solid;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.banner button:hover{
+    background-color: rgb(211, 29, 29);
+    border: rgb(211, 29, 29);
+}
+
+
+/* Opiniones */
+
+footer{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 15px;
+}
+footer i{
+    color: rgba(255, 0, 0, 0.76);
+    margin: 15px 8px 10px 1px;
+}
+.footer p{
+    width: 900px;
+    color: rgba(39, 36, 36, 0.76);
+    font-size: small;
+    font-weight: 300;
+}
+/* Footer */
+.portada1{
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./sobreNosotros/img/background.jpg);
+    background-position: bottom;
+    background-size:cover;
+    position:relative;
+}
+.main .h1 {
+    font-size: 40px;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: row;
+    padding: 50px 200px 50px 100px;
+    height: 80vh;
+    padding: 100px 100px 0 100px;
+
+}
+.sobre-texto{
+    padding-right: 50px;
+    margin-left: 15px;
+}
+.sobre-texto p{
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-size: 14px;
+    margin: 20px 0;
+
+}
+.sobre-texto button{
+    margin-top: 10px;
+    padding: 10px 50px; 
+    background: none;
+    border: rgb(0, 0, 0) 1px solid;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.sobre-texto button:hover{
+    background-color: rgb(228, 54, 54);
+    border: white;
+    color: white;
+}
+.sobre img{
+    width: 60vh;
+    margin-right: 6%;
+}
+/* SOBRE NOSTOTROS */
+.blog-main{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+.asignaturas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    margin: 100px 150px 50px 0;
+    padding-left: 60px;
+
+}
+.div-img img{
+    width: 100%;
+}
+.asignaturas h4{
+    background-color: rgb(231, 54, 54);
+    padding: 5px 130px;
+    color:white;
+}
+.asignaturas span{
+    color:rgb(68, 64, 64)
+}
+.asignaturas div{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-texto p{
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.seccion-texto h3{
+    padding: 15px 0;
+    font-weight: 600;
+}
+.seccion-texto{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.div-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vh;
+    margin: 100px; 
+}
+.div-img form{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 0.5px rgb(189, 182, 182) solid;
+    padding: 20px;
+    margin-top: 50px;
+}
+.div-img form input,textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 10px 10px 5px;
+    background-color: rgba(218, 214, 214, 0.37);
+    border: none;
+}
+.div-img form textarea{
+    resize: none;
+    height: 200px;
+}
+.div-img button{
+    background: none;
+    margin-top: 15px;
+    padding: 10px 60px;
+    border: 1px rgb(200, 56, 56) solid;
+    transition: 0.6s;
+    cursor: pointer;
+    color: rgb(200, 56, 56);
+}
+.div-img button:hover{
+    background-color: rgb(204, 54, 54);
+    color: white;
+}
+/* BLOG */
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contacto{
+    width: 80%;
+    margin: auto;
+}
+.contacto-col span p{
+    color: black;
+    font-size: 13px;
+    font-weight: 200;
+    padding: 0;
+}
+.contacto-col{
+    flex-basis: 48%;
+    margin: 40px;
+}
+.contacto-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.contacto-col .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contacto-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight:400 ;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.contacto-col form{
+    display: flex;
+    flex-direction: column;
+}
+.contacto-col form input{
+    margin: 15px;
+    padding: 20px;
+}
+.contacto-col form textarea{
+    background: none;
+    border: 1px solid rgb(129, 128, 128);
+    margin: 15px;
+    padding: 20px;
+    resize: none;
+    height: 200px;
+    width: 95%;
+}
+.contacto-col form button{
+    background: none;
+    border: 1px rgb(200, 56, 56) solid;
+    transition: 0.6s;
+    cursor: pointer;
+    color: rgb(200, 56, 56);
+    height: 40px;
+    width: 180px;
+    margin: 20px 15px 15px 15px;
+
+}
+.contacto-col form button:hover{
+    background-color: rgb(204, 54, 54);
+    color: white;
+}
+/* CONTACTO */
