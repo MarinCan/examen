@@ -35,3 +35,14 @@ body{
     margin-left: 15%;
 
 }
+.mainsect{
+    background-color: rgb(198, 226, 43);
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.mainsect p{
+    margin: 20px 400px;
+}
